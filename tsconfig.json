@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": true,
+    "typeRoots": ["node_modules/@types", "./typings"],
+  },
+  "include": ["src/main/**/*.ts", "src/preload/**/*.tsx", "src/**/*.d.ts", "typings/global.d.ts",],
+  "exclude": [".webpack"],
+  "references": [{"path": "./tsconfig.node.json"}]
+}
